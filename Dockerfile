@@ -21,8 +21,9 @@ RUN mv chilkat-9.5.0-python-2.7-x86_64-linux/chilkat.py /usr/local/lib/python2.7
 RUN hg clone https://androguard.googlecode.com/hg/ androguard 
 RUN cp -r androguard androguard-build
 WORKDIR /opt/androguard-build/
+RUN sed 's/distribute//g' /opt/androguard-build/setup.py -i
+RUN sed 's/IPython.frontend.terminal.embed/IPython.terminal.embed/g' /opt/androguard-build/androlyze.py -i
 RUN make
-RUN sed 's/distribute//g' /opt/androguard/setup.py -i
 RUN python setup.py install
 RUN cp -r elsim/elsim /usr/lib/python2.7/
 
@@ -39,3 +40,5 @@ RUN rm -rf /opt/pyfuzzy-0.1.0 /opt/chilkat-9.5.0-python-2.7-x86_64-linux/ /opt/c
 
 WORKDIR /root
 ENV HOME /root
+
+CMD ["/bin/bash"]
