@@ -1,5 +1,5 @@
 # A dockerized androguard installation
-FROM ubuntu:14.04
+FROM ubuntu:latest
 MAINTAINER ali@ikinci.info
 
 ENV LC_ALL C
