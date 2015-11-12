@@ -13,5 +13,5 @@ This container also comes with preinstalled ssh (default password androguard) an
 
 
   [1]: https://github.com/androguard/androguard
-  [2]: https://registry.hub.docker.com/u/honeynet/androguard/
+  [2]: https://hub.docker.com/r/honeynet/androguard/
   [3]: https://github.com/aikinci/androguard
