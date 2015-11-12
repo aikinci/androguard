@@ -9,7 +9,7 @@ Sourcecode is on [Ali Ikinci's GitHub][3]
 
     docker run -it -v ~/samples/:/root/samples/ honeynet/androguard
 
-This container also comes with 
+This container also comes with preinstalled ssh (default password androguard) and ipython-notebook.
 
 
   [1]: https://github.com/androguard/androguard
