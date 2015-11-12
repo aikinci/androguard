@@ -12,7 +12,7 @@ ADD pyfuzzy-0.1.0.tar.gz /opt
 # All commands are executed in one line to downsize the resulting docker image resulting in a 50% - 70% size savings
 RUN apt-get update && apt-get -y dist-upgrade  && apt-get install -y --no-install-recommends build-essential curl g++ git graphviz ipython libbz2-dev liblzma-dev libmuparser2 libmuparser-dev libsnappy1 libsnappy-dev libsparsehash-dev mercurial python python-beautifulsoup python-dev python-magic python-networkx python-openssl python-pip python-ptrace python-pydot python-pygments python-setuptools python-sklearn python-snappy python-twisted unzip zip zlib1g-dev && \
     pip install simhash elfesteem && \
-    curl -sO http://www.chilkatsoft.com/download/9.5.0.43/chilkat-9.5.0-python-2.7-x86_64-linux.tar.gz && \
+    curl -sO http://www.chilkatsoft.com/download/9.5.0.54/chilkat-9.5.0-python-2.7-x86_64-linux.tar.gz && \
     tar xvfz chilkat-9.5.0-python-2.7-x86_64-linux.tar.gz && \
     mv chilkat-9.5.0-python-2.7-x86_64-linux/_chilkat.so /usr/local/lib/python2.7/dist-packages && \
     mv chilkat-9.5.0-python-2.7-x86_64-linux/chilkat.py /usr/local/lib/python2.7/dist-packages && \    
